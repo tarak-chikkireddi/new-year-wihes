@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+     #a{
+        background-image: url(https://i.pinimg.com/originals/cb/cf/48/cbcf48aae7646f7d0ec475beeb595485.gif);
+        background-repeat: no-repeat;
+        background-size: 100% 800px;
+     }
+     #b{
+        text-align: center;
+        border: 4px solid blue;
+        width: 30%;
+        height: 300px;
+        margin-left: 550px;
+        margin-top: 50px;
+        padding-top: 10px;
+        box-shadow: 0px 0px 10px 10px red;
+     }
+     #b:hover{
+        text-align: center;
+        border: 4px solid red;
+        width: 30%;
+        height: 300px;
+        margin-left: 550px;
+        margin-top: 50px;
+        padding-top: 10px;
+        box-shadow: 0px 0px 10px 10px blue;
+     }
+     #c{
+        color: blue;
+         font-style: italic;
+     }
+     #d{
+      color: red;
+     }
+     #e{
+      color: blue;
+     }
+     #f{
+      color: yellow;
+     }
+     #g{
+      color: green;
+     }
+     #d:hover{
+      color: yellow;
+      border: 2px solid red;
+      background-color: blue;
+      border-width: 5px;
+     }
+     #e:hover{
+      color: red;
+      border: 2px solid blue;
+      background-color: yellow;
+      border-width: 5px;
+     }
+     #f:hover{
+      color: white;
+      border: 2px solid yellow;
+      background-color: green;
+      border-width: 5px;
+     }
+     #g:hover{
+      color:blue ;
+      border: 2px solid green;
+      background-color: red;
+      border-width: 5px;
+     }
+     #h{
+      color: blue;
+     }
+     #i{
+      margin-top: 10px;
+      color: red;
+     }
+     #pri{
+      color: red;
+     }
+     #pri:hover{
+      text-align: center;
+      color:blue;
+      box-shadow: 0px 0px 7px 7px blue;
+      width: 400px;
+      height: 50px;
+      
+     }
+   </style>
+</head>
+<body id="a">
+   <center>
+      <input id="h" placeholder="Enter your Name"><br>
+      <input type="button" value="Click Here" id="i" onclick="fun()">
+      <h1 id="pri"></h1>
+   </center>
+    <div id="b">
+        <h1 id="c"><span id="d">HAPPY</span><br><br><span id="e">NEW</span><br><br><span id="f">YEAR</span><br><br><span id="g">WELCOME TO 2023</span></h1>
+    </div>
+    <script>
+      function fun(){
+         var x=document.getElementById('h').value
+         document.getElementById('pri').innerHTML=x
+      }
+     </script>
+</body>
+</html>
